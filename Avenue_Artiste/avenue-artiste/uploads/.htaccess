@@ -1,5 +1,0 @@
-# Les photos sont publiques, mais aucun script ne doit s'y exécuter
-<FilesMatch "\.(php|phtml|phar|php[0-9])$">
-    Require all denied
-</FilesMatch>
-Options -ExecCGI -Indexes
