@@ -3,6 +3,7 @@
 <footer class="site-footer">
     <div class="wrap footer-inner">
         <div>
+            <?php if ($logoFile): ?><img class="footer-logo" src="<?= e(url($logoFile)) ?>" alt="" width="150" height="105"><?php endif; ?>
             <p class="footer-brand"><?= e(SITE_NAME) ?></p>
             <p class="muted-light"><?= e(SITE_TAGLINE) ?></p>
         </div>

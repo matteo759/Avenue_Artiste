@@ -21,7 +21,6 @@ require __DIR__ . '/includes/header.php';
 ?>
 
 <section class="hero">
-    <div class="hero-beams" aria-hidden="true"></div>
     <div class="wrap hero-grid">
         <div>
             <h1>Votre talent mérite la meilleure scène.</h1>
@@ -35,6 +34,7 @@ require __DIR__ . '/includes/header.php';
             </div>
         </div>
 
+        <div class="hero-side">
         <aside class="dates" aria-labelledby="dates-titre">
             <h2 id="dates-titre">Prochaines dates</h2>
             <?php if ($prochaines): ?>
@@ -52,6 +52,7 @@ require __DIR__ . '/includes/header.php';
                 <p class="dates-empty">Les premières dates arrivent. Créez votre profil pour être proposé dès leur ouverture.</p>
             <?php endif; ?>
         </aside>
+        </div>
     </div>
 </section>
 

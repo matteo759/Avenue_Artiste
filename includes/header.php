@@ -20,7 +20,8 @@ $flash = flash();
     <meta name="description" content="<?= e(SITE_NAME) ?> met en relation des artistes et des événements : soirées, mariages, clubs, entreprises.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Figtree:wght@400;500;600&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Syne:wght@600;700;800&family=Figtree:wght@400;500;600;700&display=swap">
+    <link rel="icon" type="image/png" href="<?= e(url('assets/img/favicon.png')) ?>">
     <link rel="stylesheet" href="<?= e(url('assets/css/style.css')) ?>">
 </head>
 <body class="<?= e($bodyClass) ?>">
@@ -29,14 +30,14 @@ $flash = flash();
 <header class="site-header">
     <div class="wrap header-inner">
         <a class="brand" href="<?= e(url('index.php')) ?>" aria-label="<?= e(SITE_NAME) ?>, accueil">
-            <span class="brand-mark">
+            <span class="brand-mark<?= $logoFile ? ' has-logo' : '' ?>">
                 <?php if ($logoFile): ?>
-                    <img src="<?= e(url($logoFile)) ?>" alt="">
+                    <img src="<?= e(url($logoFile)) ?>" alt="" height="56">
                 <?php else: ?>
                     <?= e(mb_strtoupper(mb_substr(SITE_NAME, 0, 1))) ?>
                 <?php endif; ?>
             </span>
-            <span class="brand-name"><?= e(SITE_NAME) ?></span>
+            <span class="brand-name<?= $logoFile ? ' sr-only' : '' ?>"><?= e(SITE_NAME) ?></span>
         </a>
 
         <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu">Menu</button>

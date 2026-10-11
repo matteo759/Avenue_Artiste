@@ -1,0 +1,4 @@
+data/app.sqlite
+uploads/*
+!uploads/.gitkeep
+!uploads/.htaccess

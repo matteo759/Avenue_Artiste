@@ -16,8 +16,8 @@ En local pour tester : `php -S localhost:8000` depuis ce dossier.
 ## Personnaliser
 
 - **Nom, e-mail, disciplines, types d'évènements** : `includes/config.php`
-- **Logo** : déposez `logo.svg` (ou `.png` / `.webp`) dans `assets/img/`. Il remplace automatiquement le monogramme de l'en-tête.
-- **Couleurs** : variables en haut de `assets/css/style.css` (`--rouge`, `--braise`, `--ambre`, `--bordeaux`, `--blush`)
+- **Logo** : `assets/img/logo.svg` (pancarte parisienne noire et dorée, vectorielle, utilisée partout). Pour le remplacer, déposez un autre `logo.svg` (ou `.png` / `.webp`) au même endroit. `favicon.png` est l'icône de l'onglet. L'ancien rendu 3D est conservé dans `logo-original-3d.png` (non utilisé).
+- **Couleurs et style** : variables en haut de `assets/css/style.css` (fond `--noir`, surfaces `--encre`, or `--or` / `--or-vif`). Polices : Syne (titres) et Figtree (texte), chargées depuis Google Fonts dans `includes/header.php`.
 - **Textes de la page d'accueil** : `index.php`
 
 ## Comptes
